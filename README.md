@@ -15,11 +15,11 @@ Bước 1:
       youtube_music:
 
 
-#cấu hình input text để nhập văn bản thành giọng nói 
+#cấu hình input text để nhập Link youtube
 
       input_text:
-        viettell_tts_text:
-          name: "Nhập Nội Dung"
+        youtube_music_casttt:
+          name: "Nhập Link/Url Youtube"
  
 #Cấu hình trong file script.yaml
 
@@ -28,7 +28,7 @@ Bước 1:
       - service: youtube_music.cast
         data_template:
           entity_id: media_player.googlehomemini    
-          message: '{{ states(''input_text.viettell_tts_text'') }}'
+          message: '{{ states(''input_text.youtube_music_casttt'') }}'
  
 #Cấu hình Xong check config rồi khởi động lại home assistant
 
