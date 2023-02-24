@@ -5,8 +5,6 @@ Bước 1:
 +,đi tới thư mục "custom_components" và tạo thư Mục tên "youtube_music".
   tiếp theo tải 2 file "__init__.py" và "manifest.json" vào trong thư mục "youtube_music" vừa tạo.
   
-+,Tạo tiếp thư mục "www" ngang hàng với file "configuration.yaml". 
-  tiếp đến vào thư mục "www" vừa tạo, tạo tiếp một thư mục nữa có tên là: "youtube_music"
 
 #tạo xong check config rồi khởi động lại Home Assistant
 
