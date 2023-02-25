@@ -32,5 +32,33 @@ Bước 1:
 #Cấu hình Xong check config rồi khởi động lại home assistant
 
 
+#Cấu Hình loveLace:
 
-
+    type: custom:vertical-stack-in-card
+    cards:
+      - type: entities
+        entities:
+          - entity: input_text.youtube_music_casttt
+            icon: mdi:text-box-edit
+            name: 'Nhập Link mp3 Youtube:'
+          - entity: media_player.googlehomemini
+            artwork: cover
+            type: custom:mini-media-player
+            icon: mdi:google-assistant
+            name: Google Home Mini
+            source: icon
+            info: short
+            hide:
+              icon_state: false
+              power_state: false
+              runtime: false
+              source: false
+              volume: false
+            shortcuts:
+              columns: 1
+              buttons:
+                - icon: mdi:youtube
+                  type: script
+                  id: script.youtube_music_cast
+                  name: Youtube
+  
