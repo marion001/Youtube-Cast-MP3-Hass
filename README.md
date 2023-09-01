@@ -1,4 +1,11 @@
 # Youtube-Cast-MP3-Hass
+Nếu thiếu thư viện:
+dùng lệnh: "find / -name youtube.py" để tìm kiếm xem có thư viện youtube_dl hay không, nếu không có thì tải thư mục thưu viện youtube_dl trên git này lên theo đường dẫn vừa dùng lệnh trên để tìm
+ví dụ đường dẫn thư mục trên docker: (Mỗi thiết bị sẽ có đường dẫn khác nhau)
+/var/lib/docker/overlay2/81b5134b03a172a61f0f269b70be1d65be6531e90b0dc61bf915a8230e5559ec/merged/usr/local/lib/python3.11/site-packages
+bê nguyên thư mục youtube_dl coppy vào trong thư mục site-packages trên docker
+
+
 
 Bước 1:
 
